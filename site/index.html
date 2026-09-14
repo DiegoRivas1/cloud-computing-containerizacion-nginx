@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratorio 2 · Cloud Computing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="sky" id="sky"></div>
+
+  <main class="card">
+    <p class="card__eyebrow">Laboratorio 2 · Containerización</p>
+    <h1 class="card__title">
+      Este sitio se está ejecutando dentro de un contenedor
+    </h1>
+
+    <section class="student">
+      <div class="student__avatar" aria-hidden="true">DR</div>
+      <div class="student__info">
+        <p class="student__name">Diego Raúl Rivas Huanca</p>
+        <p class="student__group">Grupo de laboratorio: <span id="grupo">B</span></p>
+      </div>
+    </section>
+
+    <section class="message">
+      <h2>Sobre Cloud Computing</h2>
+      <p>
+        Esta página no vive en "un servidor" fijo: vive dentro de una
+        <strong>imagen de contenedor</strong> que puede construirse,
+        destruirse y volverse a levantar en cualquier máquina que tenga
+        un motor de contenedores instalado. Es una muestra pequeña de la
+        idea central de la computación en la nube: separar la
+        <em>aplicación</em> de la <em>infraestructura</em> que la ejecuta,
+        para poder desplegarla, escalarla y moverla con la misma
+        facilidad con la que se movería un archivo.
+      </p>
+    </section>
+
+    <section class="ports">
+      <div class="ports__box">
+        <span class="ports__label">Máquina virtual</span>
+        <span class="ports__value">15619</span>
+      </div>
+      <div class="ports__arrow" aria-hidden="true">→</div>
+      <div class="ports__box ports__box--container">
+        <span class="ports__label">Contenedor (Nginx)</span>
+        <span class="ports__value">80</span>
+      </div>
+    </section>
+
+    <footer class="card__footer">
+      <span id="status-dot" class="status-dot"></span>
+      <span id="status-text">Servido por Nginx dentro de un contenedor Docker</span>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

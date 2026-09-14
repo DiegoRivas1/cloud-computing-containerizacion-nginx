@@ -1,7 +1,7 @@
 // Laboratorio 2 - Cloud Computing
 // Datos del estudiante (edita este objeto con tus datos reales)
 const STUDENT = {
-  grupo: "___", // TODO: reemplazar por el nombre/número real del grupo de laboratorio
+  grupo: "B", // TODO: reemplazar por el nombre/número real del grupo de laboratorio
 };
 
 document.addEventListener("DOMContentLoaded", () => {

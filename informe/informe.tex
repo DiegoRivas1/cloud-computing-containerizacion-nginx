@@ -43,7 +43,7 @@
 \rfoot{\thepage}
 
 \title{Laboratorio 2: Containerización de un Servidor Web}
-\author{Diego Raúl Rivas Huanca \\ Grupo de laboratorio: \_\_\_ \\ \textit{(completar con el grupo real)}}
+\author{Diego Raúl Rivas Huanca \\ Grupo de laboratorio: B} \\
 \date{\today}
 
 \begin{document}
@@ -113,9 +113,9 @@ Se creó una página HTML propia (no la de bienvenida de Nginx),
 organizada en archivos separados:
 
 \begin{itemize}
-  \item \texttt{site/index.html} — estructura y contenido.
-  \item \texttt{site/css/style.css} — estilos.
-  \item \texttt{site/js/script.js} — datos del estudiante y un fondo
+  \item \texttt{site/index.html} : estructura y contenido.
+  \item \texttt{site/css/style.css} : estilos.
+  \item \texttt{site/js/script.js} : datos del estudiante y un fondo
         animado decorativo.
 \end{itemize}
 
@@ -130,7 +130,7 @@ forma visual el mapeo de puertos VM (15619) $\rightarrow$ contenedor
 \subsection{Construcción exitosa de la imagen}
 \begin{figure}[h]
   \centering
-  % \includegraphics[width=0.85\textwidth]{figuras/evidencia1_build.png}
+  \includegraphics[width=0.85\textwidth]{figuras/evidencia1_build.png}
   \caption{Construcción exitosa de la imagen con \texttt{docker build}.}
   \label{fig:build}
 \end{figure}
@@ -138,16 +138,16 @@ forma visual el mapeo de puertos VM (15619) $\rightarrow$ contenedor
 \subsection{Contenedor en ejecución}
 \begin{figure}[h]
   \centering
-  % \includegraphics[width=0.85\textwidth]{figuras/evidencia2_docker_ps.png}
+  \includegraphics[width=0.85\textwidth]{figuras/evidencia2_docker_ps.png}
   \caption{Salida de \texttt{docker ps} mostrando el contenedor activo
   con el mapeo de puertos 15619→80.}
   \label{fig:ps}
 \end{figure}
-
+\newpage
 \subsection{Página accedida por el puerto 15619}
 \begin{figure}[h]
   \centering
-  % \includegraphics[width=0.85\textwidth]{figuras/evidencia3_navegador.png}
+  \includegraphics[width=0.85\textwidth]{figuras/evidencia3_navegador.png}
   \caption{Navegador mostrando la página personalizada en
   \texttt{http://localhost:15619}.}
   \label{fig:navegador}
@@ -156,7 +156,7 @@ forma visual el mapeo de puertos VM (15619) $\rightarrow$ contenedor
 \subsection{Detención y nueva ejecución del contenedor}
 \begin{figure}[h]
   \centering
-  % \includegraphics[width=0.85\textwidth]{figuras/evidencia4_stop_start.png}
+  \includegraphics[width=0.85\textwidth]{figuras/evidencia4_stop_start.png}
   \caption{Secuencia \texttt{docker stop} seguida de \texttt{docker
   start} sobre el mismo contenedor.}
   \label{fig:stopstart}
@@ -198,6 +198,11 @@ completo también disponible en \texttt{prompts.md} del repositorio).
   \item Explicación conceptual, para el informe, de la diferencia
         entre el puerto de la VM y el puerto del contenedor.
 \end{enumerate}
+
+\section{Repositorio}
+
+Link del repositorio:
+\url{https://github.com/DiegoRivas1/cloud-computing-containerizacion-nginx.git}
 
 \section{Conclusión}
 El laboratorio permitió comprobar de forma práctica cómo una misma

@@ -1,4 +1,4 @@
-# Prompts de IA utilizados — Laboratorio 2
+# Prompts de IA utilizados
 
 Registro de los prompts principales usados como apoyo (investigación de
 sintaxis, resolución de errores y comprensión de instrucciones de

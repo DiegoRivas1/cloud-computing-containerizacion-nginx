@@ -2,6 +2,9 @@
 
 Containerización de un servidor web con Nginx (Docker).
 
+## Demo
+
+![demo](img/demo.png)
 ## Estructura
 
 ```

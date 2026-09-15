@@ -180,6 +180,17 @@ la VM se redirige al puerto 80 dentro del contenedor. Sin esa
 publicación explícita, el puerto 80 del contenedor no sería alcanzable
 desde fuera de él, aunque Nginx sí esté escuchando allí.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figuras/diagrama_puertos.png}
+  \caption{Arquitectura del mapeo de puertos: el navegador entra por
+  \texttt{localhost:15619} en la máquina Windows (que cumple el rol de
+  "VM" del enunciado), y Docker Desktop redirige esa conexión hacia el
+  puerto 80 dentro del contenedor de Nginx.}
+  \label{fig:puertos}
+\end{figure}
+
+
 \section{Prompts de IA utilizados}
 De acuerdo al punto 6 del enunciado, se listan a continuación los
 prompts principales usados como apoyo para investigar sintaxis,
